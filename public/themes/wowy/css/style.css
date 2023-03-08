@@ -29093,11 +29093,10 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 25px;
+ }
+ .blogslider{
     
-    
-    
-  }
-  
+ }   
     .wrapper {
     
     
@@ -29124,8 +29123,9 @@ h6 {
   }
   .carousel1::-webkit-scrollbar {
     height: 5px;
+    /* display: hidden; */
   }
-  .carousel1::-webkit-scrollbar:hover {
+  /* .carousel1::-webkit-scrollbar:hover {
     cursor:pointer
   }
   .carousel1::-webkit-scrollbar-track {
@@ -29137,11 +29137,11 @@ h6 {
   }
   .carousel1::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: rgb(95, 95, 95);       
+    background-color: white      
   }
   .carousel1:hover::-webkit-scrollbar-thumb {
-    background-color: black;
-  }
+    background-color: white;
+  } */
   .carousel1::-webkit-scrollbar:vertical {
     display: none;
   }
@@ -29218,6 +29218,12 @@ h6 {
     flex-direction: column;
     width: 96%;
   }
+  .blogimg{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .bereicheitem{
     width: 100%;
     height: 280px;
@@ -29226,6 +29232,13 @@ h6 {
     border-top-left-radius: 20px;
     
   }
+  .blogitem{
+    width: 300px;
+    height: 280px;
+    max-width: initial;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
   .bereicheimgdesc{
     position:relative;
     width: 100%;
@@ -29233,6 +29246,18 @@ h6 {
     padding: 15px 25px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+  .blogimgdesc{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    padding: 15px 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+  }
+  .blogimgdesc a{
+    text-decoration: none;
   }
   .bereicheimgdesc a{
     text-decoration: none;
@@ -29244,12 +29269,36 @@ h6 {
     word-break: break-all;
     color:black !important;
     text-decoration: none;
-
+ 
+  }
+  .blogimgtitle{
+    word-break: break-all;
+    color:black !important;
+    text-decoration: none;
+  }
+  .blogimgtitleheader:hover{
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-decoration-thickness: 2px;
   }
   .bereicheimgtitleheader:hover{
     text-decoration: underline;
     text-decoration-color: grey;
     text-decoration-thickness: 2px;
+  }
+  .blogimgbtn{
+    width:30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top:60%;
+    left:6%;
+    border-radius: 50%;
+    border:none;
+    text-align: center;
+    align-items: center;
+    display: grid;
   }
   .bereicheimgbtn{
     width:30px;
@@ -29270,6 +29319,11 @@ h6 {
     background-color: grey;
   }
   .bereicheimgtitleheader{
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 700 !important;
+  }
+  .blogimgtitleheader{
     margin-bottom: 25px;
     font-size: 18px;
     font-weight: 700 !important;
