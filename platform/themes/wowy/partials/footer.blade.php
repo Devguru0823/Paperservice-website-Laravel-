@@ -313,7 +313,7 @@
        
     </script>
     <script>
-      const gap = 16;
+      const gap = 1;
 
       const carousel = document.getElementsByClassName("carousel1")[0],
         content = document.getElementsByClassName("imgcontent")[0],
