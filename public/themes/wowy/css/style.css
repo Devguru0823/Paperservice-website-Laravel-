@@ -4386,7 +4386,9 @@ h6.post-title {
     top: 10px;
     z-index: 2;
 }
-
+.post-thumb .entry-meta:hover{
+    font-size:20px;
+}
 .post-thumb .entry-meta a {
     background-color: #12a05c;
     border-radius: 30px;
@@ -28431,6 +28433,9 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+    .video{
+        height:400px;
+    }
     .title {
         display: none;
     }
@@ -29126,7 +29131,7 @@ h6 {
     height: 5px;
     /* display: hidden; */
   }
-  /* .carousel1::-webkit-scrollbar:hover {
+  .carousel1::-webkit-scrollbar:hover {
     cursor:pointer
   }
   .carousel1::-webkit-scrollbar-track {
@@ -29142,7 +29147,7 @@ h6 {
   }
   .carousel1:hover::-webkit-scrollbar-thumb {
     background-color: white;
-  } */
+  }
   .carousel1::-webkit-scrollbar:vertical {
     display: none;
   }
@@ -29218,6 +29223,10 @@ h6 {
     display: flex;
     flex-direction: column;
     width: 96%;
+    transition: 0.8s;
+  }
+  .bereicheimg:hover{
+      transform: scale(1.1);
   }
   .blogimg{
     position: relative;
@@ -29231,7 +29240,7 @@ h6 {
     max-width: initial;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    
+    transition: 0.3s;
   }
   .blogitem{
     width: 300px;
@@ -29239,7 +29248,11 @@ h6 {
     max-width: initial;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    transition: 0.3s;
   }
+  .blogitem:hover {
+    transform: scale(1.1);
+    }
   .bereicheimgdesc{
     position:relative;
     width: 100%;
@@ -29278,11 +29291,6 @@ h6 {
   }
   .blogimgtitle:hover{
     text-decoration: none;
-  }
-  .bereicheimgtitleheader:hover{
-    text-decoration: underline;
-    text-decoration-color: grey;
-    text-decoration-thickness: 2px;
   }
   .blogimgbtn{
     width:30px;
@@ -29325,4 +29333,7 @@ h6 {
     margin-bottom: 25px;
     font-size: 18px;
     font-weight: 700 !important;
+  }
+  .post-thumb .entry-meta:hover{
+    font-size:20px;
   }

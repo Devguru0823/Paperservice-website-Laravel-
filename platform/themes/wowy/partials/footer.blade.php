@@ -283,43 +283,53 @@
         
         <script>  
         const element = document.querySelector(".carousel1");
+        if (element) {
         element.addEventListener('wheel', (event) => {
         event.preventDefault();
         element.scrollBy({
         left: event.deltaY < 0 ? -500 : 500,    
         });
-      });
+      })
+    };
     </script>
     <script>
         const el=document.getElementsByClassName("carousel1")[0];
         const prevbtn=document.getElementsByClassName("prev")[0],
               nextbtn=document.getElementsByClassName("next")[0];
+        if (prevbtn) {
         prevbtn.addEventListener("mouseover", function handleMouseOver(){
             prevbtn.style.visibility = 'visible';
             nextbtn.style.visibility = 'visible';
-        });
+        })
+        };
+        if (nextbtn) {
         nextbtn.addEventListener("mouseover", function handleMouseOver(){
             prevbtn.style.visibility = 'visible';
             nextbtn.style.visibility = 'visible';
-        });
+        })
+        };
+        if (el) {
         el.addEventListener("mouseover", function handleMouseOver(){
             prevbtn.style.visibility = 'visible';
             nextbtn.style.visibility = 'visible';
-        });
+        })
+        };
+        if (el) {
         el.addEventListener("mouseout", function handleMouseOut(){
             prevbtn.style.visibility = 'hidden';
             nextbtn.style.visibility = 'hidden';
-        });
+        })
+        };
        
     </script>
     <script>
-      const gap = 1;
+      const gap = 16;
 
       const carousel = document.getElementsByClassName("carousel1")[0],
         content = document.getElementsByClassName("imgcontent")[0],
         next = document.getElementsByClassName("next")[0],
         prev = document.getElementsByClassName("prev")[0];
-
+        
       next.addEventListener("click", (e) => {
         carousel.scrollBy(width + gap, 0);
         if (carousel.scrollWidth !== 0) {
@@ -329,6 +339,7 @@
           next.style.display = "none";
         }
       });
+      if(prev){
       prev.addEventListener("click", (e) => {
         carousel.scrollBy(-(width + gap), 0);
         if (carousel.scrollLeft - width - gap <= 0) {
@@ -337,7 +348,8 @@
         if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
           next.style.display = "flex";
         }
-      });
+      })
+        };
 
       let width = carousel.offsetWidth;
       
