@@ -10178,7 +10178,7 @@ small {
 }
 
 .shop-product-filter-header .advanced-search-widgets1 {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .shop-product-filter-header .show-advanced-filters {
@@ -10202,7 +10202,7 @@ small {
 }
 
 .shop-product-filter-header .advanced-search-widgets {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     padding-left: 10px;
 }
 
@@ -10227,7 +10227,7 @@ small {
 }
 
 .shop-product-filter-header .advanced-search-widgets2 {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     padding-left: 10px;
 }
 
@@ -10252,7 +10252,7 @@ small {
 }
 
 .shop-product-filter-header .advanced-search-widgets3 {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     padding-left: 10px;
 }
 
@@ -10316,9 +10316,34 @@ small {
 }
 
 .shop-product-filter-header .advanced-search-widgets5 {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     padding-left: 10px;
 }
+.shop-product-filter-header .show-advanced-filters6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.shop-product-filter-header .show-advanced-filters6 .angle-down {
+    display: none;
+}
+
+.shop-product-filter-header .show-advanced-filters6.active .angle-down {
+    display: inline-block;
+}
+
+.shop-product-filter-header .show-advanced-filters6.active .angle-up {
+    display: none;
+}
+
+.shop-product-filter-header .advanced-search-widgets6 {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
 
 .custom-radio label,
 .custome-checkbox label {
@@ -29117,7 +29142,7 @@ h6 {
     position: relative;
     z-index: 2;
   }
-  .pseduo-track {
+  /* .pseduo-track {
     background-color: lightgrey;
     height: 5px;
     width: 100%;
@@ -29126,12 +29151,12 @@ h6 {
     z-index: 0;
     cursor:pointer;
     border-radius: 10px;
-  }
+  } */
   .carousel1::-webkit-scrollbar {
     height: 5px;
-    /* display: hidden; */
+    display: none;
   }
-  .carousel1::-webkit-scrollbar:hover {
+  /* .carousel1::-webkit-scrollbar:hover {
     cursor:pointer
   }
   .carousel1::-webkit-scrollbar-track {
@@ -29147,7 +29172,7 @@ h6 {
   }
   .carousel1:hover::-webkit-scrollbar-thumb {
     background-color: white;
-  }
+  } */
   .carousel1::-webkit-scrollbar:vertical {
     display: none;
   }

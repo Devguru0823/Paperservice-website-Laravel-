@@ -281,7 +281,7 @@
         </script>
         
         
-        <script>  
+        <!-- <script>  
         const element = document.querySelector(".carousel1");
         if (element) {
         element.addEventListener('wheel', (event) => {
@@ -291,7 +291,7 @@
         });
       })
     };
-    </script>
+    </script> -->
     <script>
         const el=document.getElementsByClassName("carousel1")[0];
         const prevbtn=document.getElementsByClassName("prev")[0],

@@ -48,7 +48,7 @@
         </div>  
        
         <div style="border-top: 1px solid #e1e1e1;padding-top: 10px">
-            <a class="show-advanced-filters2" href="#widgets1">
+            <a class="show-advanced-filters2" href="#">
                 <span class="product-filter-title">Farbe</span>
                 <i class="far fa-angle-up angle-down"></i>
                 <i class="far fa-angle-down angle-up"></i>
@@ -92,6 +92,43 @@
                             </div>
                         </div>
                     @endif                       
+                </div>
+            </div>
+        </div>
+
+        @php
+            $tags = app(\Botble\Ecommerce\Repositories\Interfaces\ProductTagInterface::class)->advancedGet([
+                'condition' => ['status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED],
+                'withCount' => ['products'],
+                'order_by'  => ['products_count' => 'desc'],
+                'take'      => 20,
+            ]);
+        @endphp
+        <div style="border-top: 1px solid #e1e1e1; padding-top: 10px">
+             <a class="show-advanced-filters6" href="#">
+                <span class="product-filter-title">Branchenlösungen</span>
+                <i class="far fa-angle-up angle-down"></i>
+                <i class="far fa-angle-down angle-up"></i>
+            </a>
+            <div class="advanced-search-widgets6" style="display: none">
+                <div class="row">
+                    @if (count($tags) > 0)
+                        <div class="mb-lg-0 mb-md-5 mb-sm-5 widget-filter-item">
+                            <div class="custome-checkbox">
+                                @foreach($tags as $tag)
+                                    <input class="form-check-input"
+                                        onclick="handleClick(this);"
+                                        name="tags[]"
+                                        type="checkbox"
+                                        id="tag-filter-{{ $tag->id }}"
+                                        value="{{ $tag->id }}"
+                                        @if (in_array($tag->id, request()->input('tags', []))) checked @endif>
+                                    <label class="form-check-label" for="tag-filter-{{ $tag->id }}"><span class="d-inline-block">{{ $tag->name }}</span> <span class="d-inline-block">({{ $tag->products_count }})</span> </label>
+                                    
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -153,6 +190,9 @@ $(document).on('click', '.advanced-search-widgets4 input', function(ev) {
     $("#form_submit").submit();
 })
 $(document).on('click', '.advanced-search-widgets5 input', function(ev) {
+    $("#form_submit").submit();
+})
+$(document).on('click', '.advanced-search-widgets6 input', function(ev) {
     $("#form_submit").submit();
 })
 </script>

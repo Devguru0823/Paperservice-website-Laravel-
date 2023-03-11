@@ -1499,12 +1499,12 @@
                         t(this).toggleClass("active"),
                         t(".advanced-search-widgets3").slideToggle(500);
                 }),
-                // t(document).on("click", ".show-advanced-filters", function(e) {
-                //     e.preventDefault(),
-                //         e.stopPropagation(),
-                //         t(this).toggleClass("active"),
-                //         t(".advanced-search-widgets").slideToggle(500);
-                // }),
+                t(document).on("click", ".show-advanced-filters", function(e) {
+                    e.preventDefault(),
+                        e.stopPropagation(),
+                        t(this).toggleClass("active"),
+                        t(".advanced-search-widgets").slideToggle(500);
+                }),
                 t(document).on("click", ".show-advanced-filters4", function(e) {
                     e.preventDefault(),
                         e.stopPropagation(),
@@ -1516,6 +1516,12 @@
                         e.stopPropagation(),
                         t(this).toggleClass("active"),
                         t(".advanced-search-widgets5").slideToggle(500);
+                }),
+                t(document).on("click", ".show-advanced-filters6", function(e) {
+                    e.preventDefault(),
+                        e.stopPropagation(),
+                        t(this).toggleClass("active"),
+                        t(".advanced-search-widgets6").slideToggle(500);
                 }),
                 m(),
                 d.length &&
