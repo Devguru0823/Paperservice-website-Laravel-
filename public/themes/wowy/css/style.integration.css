@@ -49,7 +49,6 @@ main{background-image:url("http://localhost:8000/storage/2.png")}
 .up far fa-chevron-up{display:none}
 -------------------------------------------------------------------blog------------------------------------------------------------------
 main .container-fluid{
-    /* background-color: #f7f9fa; */
     background-image:url("../../2.png")
 }
 main h1 {
@@ -187,7 +186,7 @@ main .subcontent h3 {
     font-size: 22px;
 }
 main .pagination {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-left: auto;

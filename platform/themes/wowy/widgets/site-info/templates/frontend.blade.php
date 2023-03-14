@@ -18,7 +18,7 @@
                 </p>
             @endif
             <div style="text-decoration: underline;font-size:14px;color: #18327a;margin-top:32px;">
-                Auf Katre anzeigen
+                Auf Karte anzeigen
             </div>      
             @if (theme_option('social_links'))
 

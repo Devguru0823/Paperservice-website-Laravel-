@@ -1,6 +1,6 @@
 
 @if ($paginator->hasPages())
-<div class="pagination-area mt-15 mb-md-5 mb-lg-0 pagination-page">
+<div class="pagination-area mb-md-5 mb-lg-0 pagination-page">
     <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center">
             {{-- Previous Page Link --}}

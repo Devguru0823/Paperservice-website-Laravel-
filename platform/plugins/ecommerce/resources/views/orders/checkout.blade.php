@@ -30,7 +30,7 @@
                         <!---------------------- RENDER PRODUCTS IN HERE ---------------- -->
                         {!! apply_filters(RENDER_PRODUCTS_IN_CHECKOUT_PAGE, $products) !!}
 
-                        {{-- <div class="mt-2 p-2">
+                        <!-- <div class="mt-2 p-2">
                             <div class="row">
                                 <div class="col-6">
                                     <p>{{ __('Subtotal') }}:</p>
@@ -100,14 +100,14 @@
                                        data-price="{{ format_price(Cart::instance('cart')->rawTotal(), null, true) }}"> {{ ($promotionDiscountAmount + $couponDiscountAmount - $shippingAmount) > Cart::instance('cart')->rawTotal() ? format_price(0) : format_price(Cart::instance('cart')->rawTotal() - $promotionDiscountAmount - $couponDiscountAmount + $shippingAmount) }} </p>
                                 </div>
                             </div>
-                        </div> --}}
+                        </div>  -->
                     </div>
 
-                    {{-- <hr>
+                    <!-- <hr>
 
                     <div class="mt-3 mb-5">
                         @include('plugins/ecommerce::themes.discounts.partials.form')
-                    </div> --}}
+                    </div> -->
                 </div>
                 <div class="col-lg-7 col-md-6 left">
                     <div class="d-none d-sm-block">
@@ -128,7 +128,7 @@
                             </div>
                             <br>
                         @endif
-{{-- 
+
                         @if (!is_plugin_active('marketplace'))
                             @if (Arr::get($sessionCheckoutData, 'is_available_shipping', true))
                                 <div id="shipping-method-wrapper">
@@ -162,9 +162,47 @@
                             @else
                                 Can render text to show for customer
                             @endif
-                        @endif --}}
+                        @endif 
 
-                        {{-- <div class="position-relative">
+                        <!-- @if (! is_plugin_active('marketplace'))
+                                @if (Arr::get($sessionCheckoutData, 'is_available_shipping', true))
+                                    <div id="shipping-method-wrapper">
+                                        <h5 class="checkout-payment-title">{{ __('Shipping method') }}</h5>
+                                        <div class="shipping-info-loading" style="display: none;">
+                                            <div class="shipping-info-loading-content">
+                                                <i class="fas fa-spinner fa-spin"></i>
+                                            </div>
+                                        </div>
+                                        @if (!empty($shipping))
+                                            <div class="payment-checkout-form">
+                                                <input type="hidden" name="shipping_option" value="{{ old('shipping_option', $defaultShippingOption) }}">
+                                                <ul class="list-group list_payment_method">
+                                                    @foreach ($shipping as $shippingKey => $shippingItems)
+                                                        @foreach($shippingItems as $shippingOption => $shippingItem)
+                                                            @include('plugins/ecommerce::orders.partials.shipping-option', [
+                                                                'shippingItem' => $shippingItem,
+                                                                'attributes' =>[
+                                                                    'id' => 'shipping-method-' . $shippingKey . '-' . $shippingOption,
+                                                                    'name' => 'shipping_method',
+                                                                    'class' => 'magic-radio shipping_method_input',
+                                                                    'checked' => old('shipping_method', $defaultShippingMethod) == $shippingKey && old('shipping_option', $defaultShippingOption) == $shippingOption,
+                                                                    'disabled' => Arr::get($shippingItem, 'disabled'),
+                                                                    'data-option' => $shippingOption,
+                                                                ],
+                                                            ])
+                                                        @endforeach
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        @else
+                                            <p>{{ __('No shipping methods available!') }}</p>
+                                        @endif
+                                    </div>
+                                    <br>
+                                @endif
+                            @endif -->
+
+                        <div class="position-relative">
                             <div class="payment-info-loading" style="display: none;">
                                 <div class="payment-info-loading-content">
                                     <i class="fas fa-spinner fa-spin"></i>
@@ -209,7 +247,7 @@
                                     </li>
                                 @endif
                             </ul>
-                        </div> --}}
+                        </div>
 
                         <br>
 
