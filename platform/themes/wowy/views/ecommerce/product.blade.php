@@ -177,11 +177,11 @@ fa-linkedin"></i></a>
             <li class="nav-item">
                 <a class="nav-link active" id="Description-tab" data-bs-toggle="tab" href="#Description">{{ __('Description') }}</a>
             </li>
-            @if (EcommerceHelper::isReviewEnabled())
+            <!-- @if (EcommerceHelper::isReviewEnabled())
                 <li class="nav-item">
                     <a class="nav-link" id="Reviews-tab" data-bs-toggle="tab" href="#Reviews">{{ __('Reviews') }} ({{ $product->reviews_count }})</a>
                 </li>
-            @endif
+            @endif -->
             {{-- @if (is_plugin_active('faq'))
                 @if (count($product->faq_items) > 0)
                     <li class="nav-item">
@@ -377,11 +377,16 @@ fa-linkedin"></i></a>
                 <div class="col pl-md-7 pr-0">
                     <h3 class="font-size-26 font-size-md-28 ling-height-1-3 mb-2">Unser Serviceangebot</h3>
                     <p class="font-size-md-20 mb-3">
-                        Wir helfen lhnen gerne. Bitte kontaktieren Sie uns. Sie<br>
-                        erreichen uns von Montag-Donnerstag in der Zeit von<br>
+                        <!-- Wir helfen lhnen gerne. Bitte kontaktieren Sie uns. Sie<br>
+                        erreichen uns von Montag-Donnerstag in der Zeit von<br> -->
+                        Wir sind für Sie da und unterstützen Sie gerne bei allen <br>
+                        Fragen rund um unsere Produkte und Dienstleistungen. <br>
+                        Sie können uns von Montag bis Freitag während unserer Geschäftszeiten erreichen:
                     </p>
-                    <h4 class="font-size-18">Produkt - und Serviceberatung</h4>
-                    <a class="d-block font-size-14" href="#" style="text-decoration:underline">thomas.schartner@papierservice.at</a>
+                    <h4 class="font-size-18 ">Produkt - und Serviceberatung</h4>
+                    <p class="product-detail font-size-16"> +43 2632 74 509</p>
+                    <div class="product-detail d-block font-size-16">office@papierservice.at</div>
+                    <p class="font-size-md-20 mt-3 mb-3">Wir freuen uns darauf, von Ihnen zu hören und stehen Ihnen mit Rat und Tat zur Seite.</p>
                 </div>
             </div>
 

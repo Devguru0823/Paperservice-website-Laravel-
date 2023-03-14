@@ -28178,7 +28178,11 @@ h6 {
     font-size: 32px;
     margin: 30px 0;
 }
-
+.pic1text a:hover{
+    color:white;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
 .pic1button {
     border-radius: 20px;
     width: 70%;
@@ -28189,12 +28193,15 @@ h6 {
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    display: grid;
+    align-items: center;
+    text-align: center;
 }
-
 .pic2 {
     width: 34%;
     position: relative;
     margin-right:25px;
+    transition: 2s;
 }
 
 .pic2 p {
@@ -28215,7 +28222,10 @@ h6 {
     z-index: 1;
     position: relative;
 }
-
+.pic2:hover {
+    transition: 1.5s;
+    transform: scale(1.05);
+}
 .categoryname {
     display: flex;
     justify-content: center;
@@ -28309,8 +28319,12 @@ h6 {
     position: relative;
     width:65%;
     max-width: 1294px;
+    transition: 2s;
 }
-
+.carpicture:hover{
+    transform: scale(1.05);
+    transition: 1.5s;
+}
 .carpic {
     width: 100%;
     border-radius: 20px;
@@ -28332,7 +28346,10 @@ h6 {
     font-size: 36px;
     margin-top: 20px;
 }
-
+.carpicturetext a:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
 .carpicbtn {
     width: 50%;
     background-color: #12a05c;
@@ -28456,7 +28473,11 @@ h6 {
     font-size: 17px;
     margin-right: 5px;
 }
-
+.product-detail{
+    color: #18327a;
+    font-weight: 700;
+    margin-top: 10px;
+}
 @media screen and (max-width: 768px) {
     .video{
         height:400px;
@@ -29308,6 +29329,10 @@ h6 {
     word-break: break-all;
     color:black !important;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    top: 10%;
+    position: absolute;
  
   }
   .blogimgtitle{
