@@ -32,7 +32,7 @@
                     <div class="map-container pl-md-5">
                         <iframe width="100%" height="550" frameborder="0" scrolling="no" marginheight="0"
                             marginwidth="0"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d795.3070292086206!2d15.968486842081713!3d47.896072622891545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476dc0f613c5a4cf%3A0xf72edcd3bfc0ab99!2zSGF1cHRzdHJhw59lIDksIDI3NjMgUGVybml0eiwg0JDQstGB0YLRgNC40Y8!5e0!3m2!1sru!2sru!4v1666576779655!5m2!1sru!2sru"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1337.5407975669575!2d15.969075!3d47.896106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476dc0f613c5a4cf%3A0xf72edcd3bfc0ab99!2sHauptstra%C3%9Fe%209%2C%202763%20Pernitz%2C%20%C3%96sterreich!5e0!3m2!1sde!2sus!4v1678808001084!5m2!1sde!2sus"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1337.5407975669575!2d15.969075!3d47.896106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476dc0f613c5a4cf%3A0xf72edcd3bfc0ab99!2sHauptstra%C3%9Fe%209%2C%202763%20Pernitz%2C%20%C3%96sterreich!5e0!3m2!1sde!2sus!4v1678808001084!5m2!1sde!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> -->
 {{-- <div style="height: 400px; width: 100%; position: relative; text-align: right;">
     <div  style="height: 400px; width: 100%; overflow: hidden; background: none!important;">
         <iframe width="100%" height="500" src="https://maps.google.com/maps?q={{ addslashes($address) }}%20&t=&z=13&ie=UTF8&iwloc=&output=embed"
