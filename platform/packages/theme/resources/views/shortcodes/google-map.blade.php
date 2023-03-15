@@ -16,7 +16,7 @@
                                         class="font-size-18 p-font-sw" style="color:#18327a">thomas.schartner@papierservice.at</span></a></p>
                             <p class="address mb-5 mb-md-7"><i class="fa fa-map-marker"
                                     style="color:#12a05c; padding-top:15px"></i> <span
-                                    class="font-size-18 p-font-sw">Haupstrasse 9, <br>2763 Pernitz, Austria</span></p>
+                                    class="font-size-18 p-font-sw">Hauptstraße 9, <br>2763 Pernitz, Austria</span></p>
                             <p class="time"><i class="fa fa-calendar" style="color:#12a05c; "></i>
                                 <span class="font-size-18 p-font-sw">Montag – Freitag <br>07:00 – 16:00 Uhr</span></p>
                         </div>

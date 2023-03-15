@@ -377,8 +377,7 @@ fa-linkedin"></i></a>
                 <div class="col pl-md-7 pr-0">
                     <h3 class="font-size-26 font-size-md-28 ling-height-1-3 mb-2">Unser Serviceangebot</h3>
                     <p class="font-size-md-20 mb-3">
-                        <!-- Wir helfen lhnen gerne. Bitte kontaktieren Sie uns. Sie<br>
-                        erreichen uns von Montag-Donnerstag in der Zeit von<br> -->
+                    
                         Wir sind für Sie da und unterstützen Sie gerne bei allen <br>
                         Fragen rund um unsere Produkte und Dienstleistungen. <br>
                         Sie können uns von Montag bis Freitag während unserer Geschäftszeiten erreichen:
