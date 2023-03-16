@@ -366,7 +366,10 @@ fa-linkedin"></i></a>
             </div>
             <div class="tab-pane fade" id="Download">
                 <h3 style="font-size: 26px; margin-bottom:20px;">Download</h3>
-                <a href="#" style="text-decoration: underline;"><i class='fas fa-file-download' style='font-size:24px; margin-right:10px'></i>Download Datenblatt</a>
+                <!-- <a href="#" style="text-decoration: underline;"><i class='fas fa-file-download' style='font-size:24px; margin-right:10px'></i>Download Datenblatt</a> -->
+                {!! apply_filters('ecommerce_before_product_description', null, $product) !!}
+                {!! BaseHelper::clean($product->description) !!}
+                {!! apply_filters('ecommerce_after_product_description', null, $product) !!}                              
             </div>
         </div>
         <div class="service-content">
@@ -377,7 +380,8 @@ fa-linkedin"></i></a>
                 <div class="col pl-md-7 pr-0">
                     <h3 class="font-size-26 font-size-md-28 ling-height-1-3 mb-2">Unser Serviceangebot</h3>
                     <p class="font-size-md-20 mb-3">
-                    
+                        <!-- Wir helfen lhnen gerne. Bitte kontaktieren Sie uns. Sie<br>
+                        erreichen uns von Montag-Donnerstag in der Zeit von<br> -->
                         Wir sind für Sie da und unterstützen Sie gerne bei allen <br>
                         Fragen rund um unsere Produkte und Dienstleistungen. <br>
                         Sie können uns von Montag bis Freitag während unserer Geschäftszeiten erreichen:

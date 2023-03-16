@@ -1,5 +1,6 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
+use Theme\Wowy\Http\Controllers\Pdfdownload;
 Route::group(['namespace' => 'Theme\Wowy\Http\Controllers', 'middleware' => 'web'], function () {
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
         Route::get('ajax/cart', 'WowyController@ajaxCart')
@@ -50,3 +51,4 @@ Route::group(['namespace' => 'Theme\Wowy\Http\Controllers', 'middleware' => ['we
             ->name('public.single');
     });
 });
+// Route::get('download', 'Pdfdownload@download');

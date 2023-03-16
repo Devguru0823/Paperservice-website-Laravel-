@@ -29387,3 +29387,9 @@ h6 {
   .post-thumb .entry-meta:hover{
     font-size:20px;
   }
+  #Produktangaben a{
+    display: none;
+  }
+  #Download figure{
+    display: none;
+  }
