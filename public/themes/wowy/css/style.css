@@ -1990,6 +1990,7 @@ label {
 .page-header.breadcrumb-wrap {
     background-color: #f7f8f9;
     padding: 20px;
+    display: none;
 }
 
 .page-header .breadcrumb {
@@ -23793,7 +23794,7 @@ textarea:focus {
 }
 
 body:not(.home) .content-area {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .container {
@@ -29273,6 +29274,7 @@ h6 {
   }
   .bereicheimg:hover{
       transform: scale(1.1);
+      cursor: pointer;
   }
   .blogimg{
     position: relative;

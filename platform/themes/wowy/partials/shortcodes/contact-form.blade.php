@@ -13,23 +13,30 @@
                                     <input name="name" value="{{ old('name') }}" placeholder="{{ __('Name') }}" type="text" >
                                 </div>
                             </div>
-                             <div class="col-lg-6 col-md-6">
+                            <!-- <div class="col-lg-6 col-md-6">
+                               <span class="wpcf7-form-control-wrap selects">
+                                <select name="selects" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                                    <option value="Unverbindliche Beratung">Unternehmen</option>
+                                </select>
+                               </span>
+                            </div> -->
+                            <div class="col-lg-6 col-md-6" >
                                 <div class="input-style mb-20" style="border:0.5px solid #d9e0e9; border-radius:10px" >
-                                    <input name="phone" value="{{ old('phone') }}" placeholder="{{ __('Telefon') }}" type="tel">
+                                    <input type="Unternehmen" name="Unternehmen" value="{{ old('Unternehmen') }}" placeholder="{{ __('Unternehmen') }}">
                                 </div>
                             </div>
+                             
                             <div class="col-lg-6 col-md-6" >
                                 <div class="input-style mb-20" style="border:0.5px solid #d9e0e9; border-radius:10px" >
                                     <input type="email" name="email" value="{{ old('email') }}" placeholder="{{ __('Email') }}">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
-                               <span class="wpcf7-form-control-wrap selects">
-                                <select name="selects" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
-                                    <option value="Unverbindliche Beratung">Unverbindliche Beratung</option>
-                                </select>
-                               </span>
+                                <div class="input-style mb-20" style="border:0.5px solid #d9e0e9; border-radius:10px" >
+                                    <input name="phone" value="{{ old('phone') }}" placeholder="{{ __('Telefon') }}" type="tel">
+                                </div>
                             </div>
+                            
                            
                             {{-- <div class="col-lg-12 col-md-12">
                                 <div class="input-style mb-20">

@@ -3,7 +3,7 @@
         @if (theme_option('logo'))
             <div class="logo logo-width-1 wow fadeIn animated">
                 <a href="{{ route('public.index') }}">
-                    <img src="http://papierservice.online/storage/home-images/logo1.png">
+                    <img src="http://127.0.0.1:8000/storage/home-images/logo1.png">
                    
                 </a>
             </div>
@@ -17,9 +17,9 @@
                         Austria               
                 </p>
             @endif
-            <div style="text-decoration: underline;font-size:14px;color: #18327a;margin-top:32px;">
+            <a style="text-decoration: underline;font-size:14px;color: #18327a;margin-top:32px;" href="https://www.google.com/maps/place/Papier-Service+Reixenartner+%26+Spiwak+OHG/@47.8961025,15.9669037,17z/data=!3m1!4b1!4m6!3m5!1s0x476dc0f613f7adef:0x8973cecffe0a5076!8m2!3d47.8961025!4d15.9690924!16s%2Fg%2F1txnn82d">
                 Auf Karte anzeigen
-            </div>      
+            </a>      
             @if (theme_option('social_links'))
 
                 <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0" style="display:flex !important;">

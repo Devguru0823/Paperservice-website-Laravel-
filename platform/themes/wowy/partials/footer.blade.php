@@ -100,6 +100,23 @@
     </div>
     <script src="{{URL::asset('/themes/wowy/owl-carousel/owl.carousel.min.js')}}"></script> 
     <script>
+        $(document).ready(function(){
+            $(".bereicheimg1").click( function() {
+                window.location.href="http://127.0.0.1:8000/products?layout=product-left-sidebar&tags%5B%5D=3";
+            });
+            $(".bereicheimg2").click( function() {
+                window.location.href="http://127.0.0.1:8000/products?layout=product-left-sidebar&tags%5B%5D=4";
+            });
+            $(".bereicheimg3").click( function() {
+                window.location.href="http://127.0.0.1:8000/products?layout=product-left-sidebar&tags%5B%5D=5";
+            });
+            $(".bereicheimg4").click( function() {
+                window.location.href="http://127.0.0.1:8000/products?layout=product-left-sidebar&tags%5B%5D=6";
+            });
+            
+        })
+    </script>
+    <script>
         $(document).ready(function() {
             
             $(".owl-carousel-d").owlCarousel({
@@ -270,14 +287,17 @@
         <script>
                 setTimeout(() => {
                     
+                //    document.getElementsByClassName("video")[0].autoplay=true; 
+                //    console.log("----->",document.getElementsByClassName("video")[0].autoplay); 
+                //    document.getElementsByClassName("video")[0].muted=true; 
+                //    document.getElementsByClassName("video")[0].loop=true; 
+                //    document.getElementsByClassName("video")[0].load() 
                     $(".video").click();
                     $(".video")[0].autoplay = true;
                     $(".video")[0].muted = true;
                     $(".video")[0].loop = true;
                     $(".video")[0].load()
                 }, 10000)
-            
-            // });
         </script>
         
         

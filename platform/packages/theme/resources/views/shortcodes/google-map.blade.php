@@ -1,7 +1,7 @@
-<div id="content" role="main" class="backgroud-gray background-line py-7 py-md-13  content-area">
+<div id="content" role="main" class="backgroud-gray background-line   content-area">
 
     <div class="container">
-        <h1 class="font-size-34 font-size-md-42 font-weight-600 mb-md-11">Kontakt</h1>
+        <p class="font-size-34 font-size-md-42 font-weight-600 mb-md-7" style="color:#18327a">Kontakt</p>
         <div class="contact-top mb-7 mb-md-0">
             <div class="row">
                 <div class="col-md-4 mb-7 mb-md-15">
@@ -10,10 +10,10 @@
                         <div class="text primary-color py-7 my-5">
                             <p class="phone mb-5 mb-md-6"><a href="tel:+43263274509"><i class="fa fa-phone"
                                         style="color:#12a05c; "></i> <span
-                                        class="font-size-28 font-weight-600 p-font-sw" style="color:#18327a">+43 2632 74 509</span></a></p>
+                                        class="font-size-20 font-weight-600 p-font-sw" style="color:#18327a">+43 2632 74 509</span></a></p>
                             <p class="email mb-5 mb-md-7"><a href="thomas.schartner@papierservice.at"><i
                                         class="fa fa-envelope" style="color:#12a05c; padding-top:2px"></i> <span
-                                        class="font-size-18 p-font-sw" style="color:#18327a">thomas.schartner@papierservice.at</span></a></p>
+                                        class="font-size-18 p-font-sw" style="color:#18327a">office@papierservice.at</span></a></p>
                             <p class="address mb-5 mb-md-7"><i class="fa fa-map-marker"
                                     style="color:#12a05c; padding-top:15px"></i> <span
                                     class="font-size-18 p-font-sw">Hauptstraße 9, <br>2763 Pernitz, Austria</span></p>

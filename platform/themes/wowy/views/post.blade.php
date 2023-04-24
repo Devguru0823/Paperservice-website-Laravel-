@@ -6,8 +6,8 @@
 
 <div class="single-page">
     <div class="single-header style-2">
-        <h1 class="mb-30">{{ $post->name }}</h1>
-        <div class="single-header-meta">
+        <p class="mb-30 font-size-50 font-weight-700" style="line-height:1; color:#18327a">{{ $post->name }}</p>
+        <!-- <div class="single-header-meta">
             <div class="entry-meta meta-1 font-xs mt-15 mb-15">
                 <span class="post-by">{{ __('By') }} {{ $post->author->name }}</span>
                 <span class="post-on has-dot">{{ $post->created_at->translatedFormat('M d, Y') }}</span>
@@ -28,7 +28,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="single-content">
         {!! BaseHelper::clean($post->content) !!}
